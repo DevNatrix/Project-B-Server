@@ -1,0 +1,37 @@
+player ---------------------
+player
+int max health
+float acceleration
+float in-air accel
+float deceleration
+float in-air decel
+float sliding decel
+float speed boost on slide
+float jump power
+float max speed
+float min y (kill height)
+float added gravity
+bool wallrunnning
+float dash speed
+float dash time
+float dash cooldown
+
+weapons -------------------
+weapon
+int weaponID
+float headshot mult
+int damage
+float max dist
+float firerate
+float bullet speed (visual)
+int ammo in reserve
+int max ammo
+int start ammo
+
+abilities -----------------
+ability
+int ability id
+float step
+float max multiplier
+
+
