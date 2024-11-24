@@ -1,10 +1,6 @@
 # Project-B-Server
-A c++ game server that uses both UDP and TCP. 
+This is a C++ game server that uses both UDP and TCP to handle different types of data
 
-I made this specifically to go along with my universal multiplayer client made in unity. 
-It uses UDP for movement, and game states that are updated constantly to reduce bandwidth and so that there arent duplicate messages sent if one doesnt make it to the target.
-Along with that, it also uses TCP for the event system and important messages.
-
-This server is mainly event based, while also being more of a phone line, where it processes only specified messages and just transferes the rest. I intend to have it efficient enough that it could run on basically anything (like a raspberry pi) with a relativly high player count.
-
-There is basically no security, and I don't ever intend on adding any security to this further than a basic encryption.
+UDP is used for things like player movement and game states that are updated frequently. It’s faster and saves bandwidth by not resending lost messages.
+TCP handles important events and messages that need to be delivered reliably.
+The server is mostly event-based but also works like a "phone line," processing specific messages and simply forwarding the rest. It’s designed to be lightweight and efficient, so it can run on devices like a Raspberry Pi while supporting a high number of players.
